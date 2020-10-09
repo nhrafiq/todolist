@@ -10,12 +10,12 @@ div #item-container {
 
 #item {
 	margin-top: 5%;
-	/* transition: opacity 0.35s linear; */
+	transition: opacity 0.35s linear;
 	border-color: #dee2e6;
 }
 
 .completed-item {
 	text-decoration: line-through;
 	font-style: italic;
-	/* opacity: 0.75; */
+	opacity: 0.75;
 }
