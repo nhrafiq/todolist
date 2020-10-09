@@ -17,5 +17,5 @@ div #item-container {
 .completed-item {
 	text-decoration: line-through;
 	font-style: italic;
-	opacity: 80%;
+	opacity: 0.75;
 }
