@@ -1,6 +1,7 @@
 div #item-container {
 	text-align: left;
-	width: 25%;
+	width: 350px;
+	margin: 20px;
 }
 
 #due-date {

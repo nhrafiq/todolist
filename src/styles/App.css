@@ -6,6 +6,13 @@ div #container {
 	width: 100%;
 }
 
+div #data-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 250px;
+}
+
 #addItemButton {
 	position: absolute;
 	bottom: 10px;

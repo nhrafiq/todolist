@@ -63,8 +63,12 @@ function App() {
 				<h3>What do you want to focus on today?</h3>
 			</header>
 
+			
 			{!toDoList.length && (<p id="get-started">Click the + button in the lower right hand corner to add your first task.</p>)}
 
+			<div id="data-container">
+			
+			
 			{toDoList &&
 				toDoList.map((item) => (
 					<ToDoItem
@@ -74,8 +78,9 @@ function App() {
 						key={item.title}
 					/>
 				))}
-			
-			<Calendar data={toDoList}/>
+			</div>
+
+			<Calendar data={toDoList} />
 
 			<Button id="addItemButton"
 				type="primary"

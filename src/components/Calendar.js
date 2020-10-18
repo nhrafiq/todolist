@@ -22,8 +22,10 @@ function Calendar({ data }) {
         return (
         <>
             {
-                dateList.map(item => (
-                    <p>{item.title}</p>
+                    dateList.map(item => (
+                    <ul>
+                        <li>{item.title}</li>
+                    </ul>
             ))}
         </>
         )
