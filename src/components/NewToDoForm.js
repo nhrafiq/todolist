@@ -16,7 +16,7 @@ function NewToDoForm({ handleSubmit }) {
 				id="addItemForm"
 				form={form}
 				onFinish={() => {
-					handleSubmit({ title, desc, dueDate });
+					handleSubmit({ title, desc, dueDate});
 
 					setTitle("");
 					setDesc("");

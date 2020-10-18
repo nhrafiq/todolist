@@ -3,16 +3,17 @@ import { Modal, Button } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import NewToDoForm from "./components/NewToDoForm";
 import ToDoItem from "./components/ToDoItem";
+import Calendar from "./components/Calendar";
 import "antd/dist/antd.css";
 import "./styles/App.css";
 
 function App() {
 	const [toDoList, updateToDoList] = useState([]);
-	const [isVisible, isModalVisible] = useState(false);
+	const [isVisible, setNewModalVisible] = useState(false);
 
 	function handleAddItem(newItem) {
 		updateToDoList((toDoList) => [...toDoList, newItem]);
-		isModalVisible(!isVisible);
+		setNewModalVisible(!isVisible);
 	}
 
 	function handleDeleteItem(item) {
@@ -52,7 +53,7 @@ function App() {
 	}
 
 	function handleModalVisibility() {
-		isModalVisible(!isVisible);
+		setNewModalVisible(!isVisible);
 	}
 
 	return (
@@ -73,6 +74,8 @@ function App() {
 						key={item.title}
 					/>
 				))}
+			
+			<Calendar data={toDoList}/>
 
 			<Button id="addItemButton"
 				type="primary"
